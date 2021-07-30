@@ -19,9 +19,9 @@ namespace Projeto01.Presentation.Api.Configurations
                 s.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Treinamento NET CORE",
-                    Description = "Treinamento NET CORE API Swagger",
-                    Contact = new OpenApiContact { Name = "COTI Informática", Email = "contato@cotiinformatica.com.br", Url = new Uri("http://www.cotiinformatica.com.br") }
+                    Title = "Curso de Idiomas",
+                    Description = "Processo Seletivo Estágio NET CORE API Swagger",
+                    Contact = new OpenApiContact { Name = "Curso Escola Idiomas", Email = "contato@escoladeidiomas.com.br", Url = new Uri("http://www.escoladeidiomas.com.br") }
                 });
 
                 s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

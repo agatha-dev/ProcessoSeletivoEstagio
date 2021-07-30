@@ -44,8 +44,8 @@ namespace Projeto01.Infra.Data.SqlServer.Mappings
 
             #region Relacionamentos
 
-            builder.HasOne(f => f.Turma) //Aluno TEM 1 Empresa
-                .WithMany(e => e.Alunos) //Turma TEM N Funcionarios
+            builder.HasOne(f => f.Turma) //Aluno TEM 1 Turma
+                .WithMany(e => e.Alunos) //Turma TEM N Alunos
                 .HasForeignKey(f => f.TurmaId); //Chave estrangeira
 
             #endregion

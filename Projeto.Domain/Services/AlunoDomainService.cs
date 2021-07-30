@@ -1,10 +1,7 @@
 ﻿using Projeto01.Domain.Contracts.Repositories;
 using Projeto01.Domain.Contracts.Services;
 using Projeto01.Domain.Entities;
-using Projeto01.Domain.Exceptions.Funcionarios;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Projeto01.Domain.Exceptions.Aluno;
 
 namespace Projeto01.Domain.Services
 {

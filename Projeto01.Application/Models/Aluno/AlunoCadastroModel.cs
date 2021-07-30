@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Projeto01.Application.Models.Funcionarios
+namespace Projeto01.Application.Models.Aluno
 {
     public class AlunoCadastroModel
     {

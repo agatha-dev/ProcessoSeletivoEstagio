@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Projeto01.Domain.Exceptions.Funcionarios
+namespace Projeto01.Domain.Exceptions.Aluno
 {
     public class CpfDeveSerUnicoException : Exception
     {

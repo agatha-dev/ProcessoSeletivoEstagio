@@ -1,12 +1,11 @@
 ﻿using Projeto01.Application.Contracts;
 using Projeto01.Application.DTOs;
-using Projeto01.Application.Models.Funcionarios;
+using Projeto01.Application.Models.Aluno;
 using Projeto01.Domain.Contracts.Services;
 using Projeto01.Domain.Entities;
 using Projeto01.Domain.Entities.Types;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Projeto01.Application.Services
 {
@@ -38,6 +37,7 @@ namespace Projeto01.Application.Services
             alunoDomainService.Create(alunoEntity);
 
             var turma = turmaDomainService.GetById(alunoEntity.TurmaId);
+
             return new AlunoDTO
             {
                 Id = alunoEntity.Id,
@@ -61,7 +61,7 @@ namespace Projeto01.Application.Services
             var alunoEntity = alunoDomainService.GetById(model.Id);
 
             if (alunoEntity == null)
-                throw new Exception("Funcionário não encontrado.");
+                throw new Exception("Aluno não encontrado.");
 
             alunoEntity.Nome = model.Nome;
             alunoEntity.DataNascimento = DateTime.Parse(model.DataNascimento);
@@ -92,7 +92,7 @@ namespace Projeto01.Application.Services
             var alunoEntity = alunoDomainService.GetById(id);
 
             if (alunoEntity == null)
-                throw new Exception("Funcionário não encontrado.");
+                throw new Exception("Aluno não encontrado.");
 
             alunoDomainService.Delete(alunoEntity);
 

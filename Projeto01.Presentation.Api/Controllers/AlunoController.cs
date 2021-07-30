@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Projeto01.Application.Contracts;
-using Projeto01.Application.Models.Funcionarios;
+using Projeto01.Application.Models.Aluno;
 
 namespace Projeto01.Presentation.Api.Controllers
 {

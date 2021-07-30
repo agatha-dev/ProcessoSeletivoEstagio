@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Projeto01.Application.Models.Empresas
+namespace Projeto01.Application.Models.Turma
 {
     public class TurmaEdicaoModel
     {
-        [Required(ErrorMessage = "Por favor, informe o id da empresa")]
+        [Required(ErrorMessage = "Por favor, informe o id da Turma")]
         public Guid Id { get; set; }
 
         [MinLength(6, ErrorMessage = "Por favor, informe no mínimo {1} caracteres.")]

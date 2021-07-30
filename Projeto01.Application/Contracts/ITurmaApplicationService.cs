@@ -1,8 +1,7 @@
 ﻿using Projeto01.Application.DTOs;
-using Projeto01.Application.Models.Empresas;
+using Projeto01.Application.Models.Turma;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Projeto01.Application.Contracts
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Projeto01.Application.Models.Empresas
+namespace Projeto01.Application.Models.Turma
 {
     public class TurmaCadastroModel
     {

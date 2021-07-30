@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Projeto01.Domain.Exceptions.Empresas
+namespace Projeto01.Domain.Exceptions.Turma
 {
     public class ExclusaoNaoPermitidaException : Exception
     {

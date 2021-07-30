@@ -1,11 +1,10 @@
 ﻿using Projeto01.Application.Contracts;
 using Projeto01.Application.DTOs;
-using Projeto01.Application.Models.Empresas;
+using Projeto01.Application.Models.Turma;
 using Projeto01.Domain.Contracts.Services;
 using Projeto01.Domain.Entities;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Projeto01.Application.Services
 {
@@ -16,6 +15,10 @@ namespace Projeto01.Application.Services
         public TurmaApplicationService(ITurmaDomainService turmaDomainService)
         {
             this.turmaDomainService = turmaDomainService;
+        }
+
+        public TurmaApplicationService()
+        {
         }
 
         public TurmaDTO Create(TurmaCadastroModel model)
@@ -43,7 +46,7 @@ namespace Projeto01.Application.Services
             var turmaEntity = turmaDomainService.GetById(model.Id);
 
             if (turmaEntity == null)
-                throw new Exception("Empresa não encontrada.");
+                throw new Exception("Turma não encontrada.");
 
             turmaEntity.NomeCurso = model.NomeCurso;
             turmaEntity.NomeProfessor = model.NomeProfessor;
@@ -65,7 +68,7 @@ namespace Projeto01.Application.Services
             var turmaEntity = turmaDomainService.GetById(id);
 
             if (turmaEntity == null)
-                throw new Exception("Empresa não encontrada.");
+                throw new Exception(" Turma não encontrada.");
 
             turmaDomainService.Delete(turmaEntity);
 
@@ -116,5 +119,6 @@ namespace Projeto01.Application.Services
         {
             turmaDomainService.Dispose();
         }
+
     }
 }
